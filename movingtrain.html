@@ -1,0 +1,27 @@
+<html>
+<head>
+<script>
+    var img = null;
+    function init(){
+        img = document.getElementById('mytrain');
+        img.style.position = 'relative';
+        img.style.left = '50px';
+    }
+
+    function movingRight(){
+        img.style.left = parseInt(img.style.left) + 100 + 'px';
+    }
+
+    window.onload = init;
+</script>
+</head>
+<body>
+    <form>
+        <img id="mytrain" src="train.webp" />
+        <center>
+            <p>Click the button below button to move the image right</p>
+            <input type="button" value="Click Me" onclick="movingRight();" />
+        </center>
+    </form>
+</body>
+</html>
